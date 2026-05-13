@@ -1,0 +1,11 @@
+build:
+  gpu: true
+  python_version: "3.11"
+  system_packages:
+    - "ffmpeg"
+  python_packages:
+    - "torch==2.1.2"
+    - "torchaudio==2.1.2"
+    - "yt-dlp==2024.04.09"
+    - "openai-whisper==20231117"
+predict: "predict.py:Predictor"
